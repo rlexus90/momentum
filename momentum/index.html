@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="assets/favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" href="css/owfont-regular.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/icono.min.css" />
+	<title>momentum</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="player">
+			<div class="player-controls">
+				<button class="play-prev player-icon"></button>
+				<button class="play player-icon"></button>
+				<button class="play-next player-icon"></button>
+			</div>
+			<ul class="play-list"></ul>
+			<div class="new-player">
+				<div class="btn-play player-btn"></div>
+				<div class="time-code"></div>
+				<div class="time-line">
+					<div class="progress"></div>
+				</div>
+				<div class="volume-container">
+					<div class="volume icono-volumeMedium"></div>
+					<div class="volume-slider">
+						<div class="volume-range"></div>
+					</div>
+				</div>
+				<div class="hide-player">
+					<div class="icono-caretLeft"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="weather">
+			<input type="text" class="city" />
+			<i class="weather-icon owf"></i>
+			<div class="weather-error"></div>
+			<div class="description-container">
+				<span class="temperature"></span>
+				<span class="weather-description"></span>
+			</div>
+			<div class="wind"></div>
+			<div class="humidity"></div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="slider-icons">
+			<button class="slide-prev slider-icon"></button>
+			<button class="slide-next slider-icon"></button>
+		</div>
+		<time class="time"></time>
+		<date class="date"></date>
+		<div class="greeting-container">
+			<span class="greeting"></span>
+			<input type="text" class="name" />
+		</div>
+	</main>
+	<footer class="footer">
+		<button class="change-quote"></button>
+		<div class="settings-parametrs">
+			<p>Settings</p>
+			<div class="lang">
+				<p class="language">Language</p>
+				<div class="check-button">
+					<span>Ru/Ua</span>
+					<div class="check check-language">
+						<span> </span>
+					</div>
+					<span>En</span>
+				</div>
+			</div>
+			<div class="background-container">
+				<p class="background">Background</p>
+				<div class="check-box">
+					<div class="check-button">
+						<span>Default Off</span>
+						<div class="check check-background">
+							<span> </span>
+						</div>
+						<span>On</span>
+					</div>
+					<div class="check-button">
+						<span>Unsplash Off</span>
+						<div class="check check-background">
+							<span> </span>
+						</div>
+						<span>On</span>
+					</div>
+					<div class="check-button">
+						<span>Flickr Off</span>
+						<div class="check check-background">
+							<span> </span>
+						</div>
+						<span>On</span>
+					</div>
+				</div>
+			</div>
+			<input class="api-query" type="text" placeholder="Enter query and press Enter">
+		</div>
+		<div class="flex-container">
+			<div class="settings-container">
+				<div class="settings icono-gear"></div>
+			</div>
+			<div>
+				<div class="quote"></div>
+				<div class="author"></div>
+			</div>
+			<div>
+				<div class="todolist-wraper">
+					<ul class="todolist-case"> </ul>
+					<input class="new-todo" type="text" placeholder="New todo">
+				</div>
+				<div class="todolist-container"></div>
+				<div class="icono-document"></div>
+			</div>
+		</div>
+	</footer>
+	<script type="module" src="./js/script.js"></script>
+</body>
+
+</html>
